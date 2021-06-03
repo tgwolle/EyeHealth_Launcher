@@ -1,9 +1,25 @@
 {
-  "manifest_version": 2,
-  "name": "safetyTips",
-  "version": "2642",
-  "imageName": "image.squash",
-  "squash": true,
-  "fsType": "squashfs",
-  "isRemovable": false
-}
+  "manifest_version": 3,
+  "name": "Eye Health",
+  "version": "1.0",
+  "description": "Protect your eyes from stress. We will remind you to take a break!",
+  "background": {
+  "service_worker": "background.js"
+},
+
+"permissions": ["storage"],
+"action": {
+   "default_popup": "popup.html",
+   "default_icon": {
+        "16": "/images/EyeHealth16.png",
+        "32": "/images/EyeHealth32.png",
+        "48": "/images/EyeHealth48.png",
+        "128": "/images/EyeHealth.png"
+      }
+ },
+ "icons": {
+      "16": "/images/EyeHealth16.png",
+      "32": "/images/EyeHealth32.png",
+      "48": "/images/EyeHealth48.png",
+      "128": "/images/EyeHealth128.png"
+    }
